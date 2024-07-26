@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <style>
+    .font-poppins{
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            blue:"#2A4DD0",
+            green:"#4CA154",
+            lightblack:"#223344",
+            grey:"#909193",
+            lightwhite:"#F2F9FE"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-poppins bg-lightwhite">
+  <header class="w-full  h-20 flex items-center justify-between p-3 box-border ">
+    
+    <div>
+      <img class="w-32" src="alarado-icon-homepage.svg" alt="alarado-icon-homepage">
+    </div>
+
+    <ul class="hidden sm:flex items-center justify-center ">
+      <li><a class="mx-4 font-semibold" href="">About</a></li>
+      <li><a class="mx-4 text-grey font-semibold " href="">Product</a></li>
+      <li><a class="mx-4 text-grey font-semibold " href="">Resource</a></li>
+      <li><a class="mx-4 text-grey font-semibold " href="">Contact</a></li>
+    </ul>
+
+    <div class="hidden sm:flex items-center justify-center">
+      <a href=""><img src="Moon_fill_light.svg" alt=""></a>
+      <a href=""><img src="Sun_fill.svg" alt=""></a>
+    </div>
+  </header>
+
+  <div class="w-full h-4/5 flex flex-col lg:flex-row
+   items-center justify-between flex-wrap box-border px-[5%]">
+
+    <div class="flex-grow  order-2 lg:order-1 lg:w-1/2 sm:max-lg:flex justify-center flex-col sm:max-lg:ml-12">
+      <p class="font-semibold">😎  Simple way to communicate</p>
+      <h1 class="text-7xl font-semibold my-8 mr-36">Actions for Accessibility in Design</h1>
+      <p class="text-grey font-semibold text-md w-1/2">The fastest way to build and deploy websites with resusable components.</p>
+
+      <div class="flex items-center justify-start mt-4">
+        <a href="" class="text-white font-semibold bg-blue rounded-lg px-6 py-2">GET STARTED </a>
+        <a href="" class="ml-6 text-blue font-semibold border-b-2 border-blue">Get Live Demo</a>
+      </div>
+
+      <div class="flex items-center justify-start mt-6 text-grey  text-md">
+        <img src="Done_ring_round_fill.svg" alt="" class="mx-2
+        "><span>No credit card required</span>
+        <img src="Done_ring_round_fill.svg" alt="" class="mx-2
+        "><span>No software to install</span>
+      </div>
+
+    </div>
+
+    <div class="order-1 lg:w-1/2 lg:justify-end lg:order-2">
+      <img class="w-full m-auto sm:max-lg:w-9/12" src="hero-image-simple-homepage.png" alt="">
+    </div>
+  </div>
+</body>
+</html>
